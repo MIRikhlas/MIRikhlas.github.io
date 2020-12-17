@@ -53,14 +53,16 @@
   <script src="script.js"></script> 
   <link rel="icon" href="https://cdn.discordapp.com/attachments/722609834482073632/738872005784240339/8c044c7c745b26c4b6cd223160c05501.jpg"> 
  
+	<link href="https://fonts.googleapis.com/css2?family=Arvo&amp;display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css"> 
+  
     
     </head>
 <body>
 
-
-
 <style>
-body {
+
+    body {
  background: #b284be;
 }
     
@@ -74,7 +76,6 @@ body {
  margin:10px;
  margin-left: auto;
  margin-right: auto;
- overflow: hidden;
  position: relative;
  background: #010950;
 }
@@ -86,42 +87,356 @@ body {
 .yourcute{
  color:gray;
     }
+
+.timespassing{			
+ text-align: center;
+ color: white;
+ padding: 10px;
+ text-align: center;
+ box-shadow: 0 0 44px 30px  #b284be;
+ border-radius: 40px;
+ border: none;
+ overflow: hidden;
+ background: #a178b4;
+ background-size: 100% 100%;
+ position: relative;
+ text-align: center;
+ padding: 10px;
+ margin-left: auto;
+ margin-right: auto;
+ overflow: hidden;
+}
+
+.info {
+ font-size: 80px;
+ font-family: 'Arvo', serif;
+}
+    
+h2{
+ color: white;
+ text-align: center;
+ margin-left: auto;
+ margin-left: auto;
+ font-size: 70px;
+ padding:0 0 0 0;
+ margin-bottom: 0;
+ position: relative;
+    }
+
+.ooo{
+    margin-left:auto; margin-right:auto; margin-top:80px; margin-bottom:160px;}
+
+    	
+    	
 		</style>
     
-    
+
+
+
     <header id="help"  class="lolimshit">
 <p>Upcoming - <a href="mirsaranocikhlas.html" class="yourcute">¦back¦</a></p>
      </header>
 
+
+
+    
+    <div class="lolimshit" id="container">
+
     
     
-    <div class="lolimshit">
-    
-    
-    <section>
+    <section class="ooo">
+<table id="Yours" class="timespassing">
+
+<tr class="info">
+<td colspan="4" style="font-family: 'Arvo', serif;"><u>Noc's Birthday</u></td>
+</tr>
+
+<tr class="info">
+<td id="days">120</td>
+<td id="hours">4</td>
+<td id="minutes">12</td>
+<td id="seconds">22</td>
+</tr>
+
+<tr>
+<td>Days</td>
+<td>Hours</td>
+<td>Minutes</td>
+<td>Seconds</td>
+
+<h2 id="HPPYBRTHDaY" style="display:none;">HAPPY BIRTHDAY</h2>
+ 
+</tr>
+</table>
+    </section>
         
-<iframe id="mainContent" frameborder=0 width="100%" height="550" src="NocBday.html"></iframe>
+
+ <script>
+			function ooo(){
+				var now = new Date();
+				var eventDate = new Date(2021, 6, 15);
+
+				var currentTiime = now.getTime();
+				var eventTime = eventDate.getTime();
+
+				var remTime = eventTime - currentTiime;
+				
+				if(remTime <= 0) {
+					document.getElementById('Yours').style.display = 'none';
+					document.getElementById('HPPYBRTHDaY').style.display = '';
+					return;
+				}
     
-        </section>
-    
-    <section>
+                var s = Math.floor(remTime / 1000);
+				var m = Math.floor(s / 60);
+				var h = Math.floor(m / 60);
+				var d = Math.floor(h / 24);
+
+				h %= 24;
+				m %= 60;
+				s %= 60;
+
+				h = (h < 10) ? '0' + h : h;
+				m = (m < 10) ? '0' + m : m;
+				s = (s < 10) ? '0' + s : s;
+
+				document.getElementById('days').textContent = d;
+				document.getElementById('hours').textContent = h;
+				document.getElementById('minutes').textContent = m;
+				document.getElementById('seconds').textContent = s;
+
+				setTimeout(ooo, 1000);
+			}
+
+			ooo();
+</script>
         
-<iframe id="mainContent" frameborder=0 width="100%" height="550" src="MirBday.html"></iframe>
-    
-        </section>
+
         
-    <section>
-        
-<iframe id="mainContent" frameborder=0 width="100%" height="550" src="Monthly.html"></iframe>
+    <section class="ooo">
+<table id="Mine" class="timespassing">
+
+<tr class="info">
+<td colspan="4" style="font-family: 'Arvo', serif;"><u>Mir's Birthday</u></td>
+
+</tr>
+<tr class="info">
+<td id="dayss">120</td>
+<td id="hourss">4</td>
+<td id="minutess">12</td>
+<td id="secondss">22</td>
+</tr>
+
+<tr>
+<td>Days</td>
+<td>Hours</td>
+<td>Minutes</td>
+<td>Seconds</td>
+</tr>
+
+<h2 id="HPPYBRTHDY" style="display:none;">HAPPY BIRTHDAY</h2>
+ 
+</table>
+    </section> <script>
+    function countdown(){
+				var now = new Date();
+				var eventDate = new Date(2021, 10, 4);
+
+				var currentTiime = now.getTime();
+				var eventTime = eventDate.getTime();
+
+				var remTime = eventTime - currentTiime;
+				
+				if(remTime <= 0) {
+					document.getElementById('Mine').style.display = 'none';
+					document.getElementById('HPPYBRTHDY').style.display = '';
+					return;
+				}
     
-        </section>
-        
-    <section>
-        
-<iframe id="mainContent" frameborder=0 width="100%" height="550" src="Wishday.html"></iframe>
     
-        </section>
     
-        </div>
+    
+                var s = Math.floor(remTime / 1000);
+				var m = Math.floor(s / 60);
+				var h = Math.floor(m / 60);
+				var d = Math.floor(h / 24);
+
+				h %= 24;
+				m %= 60;
+				s %= 60;
+
+				h = (h < 10) ? "0" + h : h;
+				m = (m < 10) ? "0" + m : m;
+				s = (s < 10) ? "0" + s : s;
+
+				document.getElementById("dayss").textContent = d;
+				document.getElementById("hourss").textContent = h;
+				document.getElementById("minutess").textContent = m;
+				document.getElementById("secondss").textContent = s;
+
+				setTimeout(countdown, 1000);
+			}
+
+			countdown();
+        </script>
+
+        
+        
+        
+        
+        
+        
+    <section class="ooo">
+<table id="whoooooo" class="timespassing">
+
+<tr class="info">
+<td colspan="4" style="font-family: 'Arvo', serif;"><u>Monthly Anniversary</u></td>
+</tr>
+
+<tr class="info">
+<td id="daysss">120</td>
+<td id="hoursss">4</td>
+<td id="minutesss">12</td>
+<td id="secondsss">22</td>
+</tr>
+
+<tr>
+<td>Days</td>
+<td>Hours</td>
+<td>Minutes</td>
+<td>Seconds</td>
+</tr>
+
+</table>
+
+<h2 id="MONTH" style="display:none;">ANOTHER <br> MONTHLY ANNI <br> TODAY LYYY <br> :heart: </h2>
+        
+    </section>
+    
+    
+    <script>
+
+
+			function countdown(){
+				var now = new Date();
+				var eventDate = new Date(now.getFullYear(),12, 16);
+
+				var currentTiime = now.getTime();
+				var eventTime = eventDate.getTime();
+
+				var remTime = eventTime - currentTiime;
+				
+				if(remTime <= 0) {
+					document.getElementById('whoooooo').style.display = 'none';
+					document.getElementById('MONTH').style.display = '';
+					return;
+				}
+    
+             
+                var s = Math.floor(remTime / 1000);
+				var m = Math.floor(s / 60);
+				var h = Math.floor(m / 60);
+				var d = Math.floor(h / 24);
+
+				h %= 24;
+				m %= 60;
+				s %= 60;
+
+				h = (h < 10) ? "0" + h : h;
+				m = (m < 10) ? "0" + m : m;
+				s = (s < 10) ? "0" + s : s;
+
+				document.getElementById("daysss").textContent = d;
+				document.getElementById("hoursss").textContent = h;
+				document.getElementById("minutesss").textContent = m;
+				document.getElementById("secondsss").textContent = s;
+
+				setTimeout(countdown, 1000);
+			}
+
+			countdown();
+    
+		</script>
+    
+        
+        
+        
+        
+    <section class="ooo" style="margin-bottom:80px;">
+        
+<table id="11" class="timespassing">
+
+<tr class="info">
+<td colspan="4" style="font-family: 'Arvo', serif;"><u>Wish day</u></td>
+</tr>
+
+<tr class="info">
+<td id="days">120</td>
+<td id="hours">4</td>
+<td id="minutes">12</td>
+<td id="seconds">22</td>
+</tr>
+
+<tr>
+<td>Dayssss</td>
+<td>Hourssss</td>
+<td>Minutessss</td>
+<td>Secondssss</td>
+</tr>
+
+</table>
+
+<h2 id="wishhh" style="display:none;">May your dreams come true</h2>
+     
+    </section>
+    
+    
+    
+<script>
+
+
+			function countdown(){
+				var now = new Date();
+				var eventDate = new Date(2021, 0, 11);
+
+				var currentTiime = now.getTime();
+				var eventTime = eventDate.getTime();
+
+				var remTime = eventTime - currentTiime;
+				
+				if(remTime <= 0) {
+					document.getElementById('11').style.display = 'none';
+					document.getElementById('wishhh').style.display = '';
+					return;
+				}
+    
+                var s = Math.floor(remTime / 1000);
+				var m = Math.floor(s / 60);
+				var h = Math.floor(m / 60);
+				var d = Math.floor(h / 24);
+
+				h %= 24;
+				m %= 60;
+				s %= 60;
+
+				h = (h < 10) ? "0" + h : h;
+				m = (m < 10) ? "0" + m : m;
+				s = (s < 10) ? "0" + s : s;
+
+				document.getElementById("dayssss").textContent = d;
+				document.getElementById("hourssss").textContent = h;
+				document.getElementById("minutessss").textContent = m;
+				document.getElementById("secondssss").textContent = s;
+
+				setTimeout(countdown, 1000);
+			}
+
+			countdown();
+    
+		</script>
+        
+    
+
+</div>   
 </body>
 </html>

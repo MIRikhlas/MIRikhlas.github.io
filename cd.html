@@ -78,8 +78,9 @@
  margin-right: auto;
  position: relative;
  background: #010950;
-}
-
+ overflow: hidden;
+    }
+    
 #help{
  width:55%;
 }
@@ -87,6 +88,8 @@
 .yourcute{
  color:gray;
     }
+
+
 
 .timespassing{			
  text-align: center;
@@ -110,7 +113,11 @@
 .info {
  font-size: 80px;
  font-family: 'Arvo', serif;
-}
+} 
+
+
+
+
     
 h2{
  color: white;
@@ -124,10 +131,67 @@ h2{
     }
 
 .ooo{
-    margin-left:auto; margin-right:auto; margin-top:80px; margin-bottom:160px;}
+    margin-left:auto; margin-right:auto; margin-top:80px; margin-bottom:160px; 
+ position: relative;
+ border:none;}
 
-    	
-    	
+table{
+ margin:auto;
+        }
+
+td{           
+ padding:10px 2px 10px 1px;
+        }
+
+tr{
+ transform: translateY(10px);
+    
+    }
+    
+@media only screen and (max-width: 600px){
+            
+table{
+ width:100%;               
+ padding:1px;
+      }
+#tit{
+    font-size:40px;}
+
+#days{
+    font-size:30px;}
+#dayss{
+    font-size:30px;}
+#daysss{
+    font-size:30px;}
+#dayssss{
+    font-size:30px;}
+ #hours{
+     font-size:30px;}
+ #hourss{
+     font-size:30px;}
+ #hoursss{
+     font-size:30px;}
+ #hourssss{
+     font-size:30px;}
+ #minutes{
+ font-size:30px;}
+ #minutess{
+ font-size:30px;}
+ #minutesss{
+ font-size:30px;}
+ #minutessss{
+ font-size:30px;
+    }
+ #seconds{
+ font-size:30px;}
+ #secondss{
+ font-size:30px;}
+ #secondsss{
+ font-size:30px;}
+ #secondssss{
+ font-size:30px;
+     
+    }}
 		</style>
     
 
@@ -140,7 +204,7 @@ h2{
 
 
     
-    <div class="lolimshit" id="container">
+    <div class="lolimshit">
 
     
     
@@ -148,7 +212,7 @@ h2{
 <table id="Yours" class="timespassing">
 
 <tr class="info">
-<td colspan="4" style="font-family: 'Arvo', serif;"><u>Noc's Birthday</u></td>
+<td colspan="4" style="font-family: 'Arvo', serif;" id="tit"><u>Noc's Birthday</u></td>
 </tr>
 
 <tr class="info">
@@ -217,7 +281,7 @@ h2{
 <table id="Mine" class="timespassing">
 
 <tr class="info">
-<td colspan="4" style="font-family: 'Arvo', serif;"><u>Mir's Birthday</u></td>
+<td colspan="4" style="font-family: 'Arvo', serif;" id="tit"><u>Mir's Birthday</u></td>
 
 </tr>
 <tr class="info">
@@ -238,7 +302,7 @@ h2{
  
 </table>
     </section> <script>
-    function countdown(){
+    function ccc(){
 				var now = new Date();
 				var eventDate = new Date(2021, 10, 4);
 
@@ -274,10 +338,10 @@ h2{
 				document.getElementById("minutess").textContent = m;
 				document.getElementById("secondss").textContent = s;
 
-				setTimeout(countdown, 1000);
+				setTimeout(ccc, 1000);
 			}
 
-			countdown();
+			ccc();
         </script>
 
         
@@ -290,7 +354,7 @@ h2{
 <table id="whoooooo" class="timespassing">
 
 <tr class="info">
-<td colspan="4" style="font-family: 'Arvo', serif;"><u>Monthly Anniversary</u></td>
+<td colspan="4" style="font-family: 'Arvo', serif;" id="tit"><u>Monthly Anni</u></td>
 </tr>
 
 <tr class="info">
@@ -317,7 +381,7 @@ h2{
     <script>
 
 
-			function countdown(){
+			function bbb(){
 				var now = new Date();
 				var eventDate = new Date(now.getFullYear(),12, 16);
 
@@ -351,10 +415,10 @@ h2{
 				document.getElementById("minutesss").textContent = m;
 				document.getElementById("secondsss").textContent = s;
 
-				setTimeout(countdown, 1000);
+				setTimeout(bbb, 1000);
 			}
 
-			countdown();
+			bbb();
     
 		</script>
     
@@ -367,7 +431,7 @@ h2{
 <table id="11" class="timespassing">
 
 <tr class="info">
-<td colspan="4" style="font-family: 'Arvo', serif;"><u>Wish day</u></td>
+<td colspan="4" style="font-family: 'Arvo', serif;" id="tit"><u>Wish day</u></td>
 </tr>
 
 <tr class="info">
@@ -395,7 +459,7 @@ h2{
 <script>
 
 
-			function countdown(){
+			function aaa(){
 				var now = new Date();
 				var eventDate = new Date(2021, 0, 11);
 
@@ -428,10 +492,10 @@ h2{
 				document.getElementById("minutessss").textContent = m;
 				document.getElementById("secondssss").textContent = s;
 
-				setTimeout(countdown, 1000);
+				setTimeout(aaa, 1000);
 			}
 
-			countdown();
+			aaa();
     
 		</script>
         

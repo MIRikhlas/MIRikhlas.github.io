@@ -197,29 +197,13 @@ a{
 
   
       <div class="forgivemeplease">
-  <button onclick="myNoc()" id="imsosorry" style="margin-top:0px;"><img id="inevermeanttohurtyou"src="https://cdn.discordapp.com/attachments/708603612502425692/778707882602528828/IMG_20201118_194658.png"> </button>
+
+
+  <button onclick="myNoc()" onmouseover="over()" id="imsosorry" style="margin-top:0px;"><img id="inevermeanttohurtyou"src="https://cdn.discordapp.com/attachments/708603612502425692/778707882602528828/IMG_20201118_194658.png"> </button>
   <div id="IloveMYnoc" class="imahypocrite">
           
       
-     <p><button onclick="fuckme()" class="sorry">click me♡</button></p>
-     <div id="formynoc">noc</div>
-    
-      
-      <section>
-          <p>
-          <a href="construction.html"><button class="sorry" id="again">Key Dates</button></a>
-          <a href="cd.html"><button class="sorry" id="again">Timer</button></a> </p>
-        </section>
-      <section> 
-          <p>
-          <a href="watchdates.html"><button class="sorry" id="again">Watched</button></a>
-          <a href="us.html"><button class="sorry" id="again">Us</button></a> </p>
-      </section>
-     <section>
-          <p>
-          <a href="construction.html"><button class="sorry" id="again">Contact</button></a></p>
-      </section>
-      
+      <section id="comeback"></section>
 
 
   </div>
@@ -245,6 +229,24 @@ a{
  
      
 <script>
+        function myNoc() {
+  var x = document.getElementById("comeback");
+  if (x.innerHTML === ' <section id="comeback"><p><button onclick="fuckme()" class="sorry">click me♡</button></p> <div id="formynoc">noc</div> <section> <p> <a href="construction.html"><button class="sorry" id="again">Key Dates</button></a> <a href="cd.html"><button class="sorry" id="again">Timer</button></a> </p> </section> <section> <p> <a href="watchdates.html"><button class="sorry" id="again">Watched</button></a> <a href="us.html"><button class="sorry" id="again">Us</button></a> </p> </section> <section> <p> <a href="construction.html"><button class="sorry" id="again">Contact</button></a></p> </section>') {
+    x.innerHTML = '<section id="comeback"></section>';}   
+    else {
+    x.innerHTML = ' <section id="comeback"><p><button onclick="fuckme()" class="sorry">click me♡</button></p><div id="formynoc">noc</div> <section> <p> <a href="construction.html"><button class="sorry" id="again">Key Dates</button></a> <a href="cd.html"><button class="sorry" id="again">Timer</button></a> </p> </section> <section> <p> <a href="watchdates.html"><button class="sorry" id="again">Watched</button></a> <a href="us.html"><button class="sorry" id="again">Us</button></a> </p> </section> <section> <p> <a href="construction.html"><button class="sorry" id="again">Contact</button></a></p> </section>';}}
+
+    
+        function over()
+        {
+        var x = document.getElementById("comeback")
+        if (x.innerHTML === '') {
+    x.innerHTML = '<section id="comeback"></section>';}   
+    else {
+    x.innerHTML = ' <section id="comeback"><p><button onclick="fuckme()" class="sorry">click me♡</button></p><div id="formynoc">noc</div> <section> <p> <a href="construction.html"><button class="sorry" id="again">Key Dates</button></a> <a href="cd.html"><button class="sorry" id="again">Timer</button></a> </p> </section> <section> <p> <a href="watchdates.html"><button class="sorry" id="again">Watched</button></a> <a href="us.html"><button class="sorry" id="again">Us</button></a> </p> </section> <section> <p> <a href="construction.html"><button class="sorry" id="again">Contact</button></a></p> </section>';}}
+    
+    
+    /*
 function myNoc() {
   document.getElementById("IloveMYnoc").classList.toggle("show");}
 window.onclick = function(event) {
@@ -254,8 +256,7 @@ window.onclick = function(event) {
     for (i = 0; i < forgivemepleases.length; i++) {
       var openforgivemeplease = forgivemepleases[i];
       if (openforgivemeplease.classList.contains('show')) {
-        openforgivemeplease.classList.remove('show');}}}}
-    
+        openforgivemeplease.classList.remove('show');}}}} */
     
 
   

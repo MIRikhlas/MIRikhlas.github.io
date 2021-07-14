@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,7 +9,7 @@
   <title>18th bday</title>
   <meta charset="UTF-8"> 
    
-  <meta data-n-head="true" name="theme-color" content="#f3c669">
+  <meta data-n-head="true" name="theme-color" content="#f6c9ff">
 
   <meta name="Creator" content="Ikhlas"> 
   <meta name="keywords" content="whooooooo 18"> 
@@ -55,22 +58,466 @@
   <link rel="stylesheet" href="style.css"> 
   <script src="script.js"></script> 
   <link rel="icon" href="https://cdn.discordapp.com/attachments/735435504329162783/863786102662234112/wp7773303.png"> 
-   
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
 </head>
 <body>
    
 <style>
+body{        
+ background: linear-gradient(360deg,#C1E1C1, #feb6b6);
+ /*background: linear-gradient(360deg,#fff9b5, #feb6b6);
+ /*background: linear-gradient(360deg,#ada1ff, #b0b7ff);
+ /*background: linear-gradient(360deg,#b57998, #611c40);
+ /* background: linear-gradient(360deg,#57838c, #6ad1e6,#57838c); */
+-webkit-touch-callout: none; 
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none;             
+    user-select: none; 
+ overflow:auto;
+  transition:0.4s;
+}
+img{
+    transform: translateY(10px);
+    opacity: 0;
+    animation: rows 0.5s forwards;
+   }
 
-    body {
- background: #d4faff;
-}
-    
-    
 p {
- color: white ;
  text-align: Center;
+ font-weight: bold;
 }
-    </style>
+   
+   
+@keyframes slideTOP {
+  0% {
+    transform: translateX(0%) translateY(-100%);
+
+  }
+  100% {
+    transform: translateX(0%) translateY(-50%);
+  }
+}
+   
+   
+header{ 
+  font-size: 40px;
+  text-shadow:2px 3px #Fff9b5;
+  font-weight: bold;
+}
+   
+header p{
+   color: grey;
+   font-family: 'Signika', sans-serif;
+   }
+   
+.duc {    
+  border: 1px solid gray;
+  background-color:#b1907f;
+  text-align: center;
+  font-family: 'Arvo', serif;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition:0.4s;
+  width: 23%;
+  float: center;  
+  margin: auto;
+  box-shadow:3px 3px #Fff9b5;
+  text-align: center;
+  overflow:scroll;
+}
+
+.duc p {    
+  color: #Fff9b5;
+   }
+ 
+   
+.ahh{
+   width:100%;
+   height:100%;
+   position: absolute;
+   top: 50%;
+   transform: translate(0, -50%);
+   background: #C1E1C1;
+   overflow:none;
+}
+   
+
+   
+   
+table, th, td {
+  border: none;
+  border-collapse: collapse;
+  text-align:center;
+  padding:0px !important;
+}
+table{
+  position: absolute;
+  width:100%;
+  top: 50%;
+  transform: translate(0, -50%);
+  animation: 1s ease-in 0s 1 slideTOP;
+}
+td{
+  width:50%;
+}
+   
+
+.hiddendivs{
+    width: 70%;
+    height: -webkit-fill-available;
+    background: #195c53;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    border: 3px solid #004940;
+    overflow: scroll;
+    border-radius: 20px;
+    box-shadow:0 0 44px 90px #b1907f
+;
+   }
+
+#time{
+   display:none;
+   }
+   
+   
+#msg{
+   display:none;
+   }
+   
+   
+#jift{
+   display:none;
+   }
+   
+   
+   
+.cbutton{
+   position:absolute;
+   border: 3px solid #d3b263;
+   padding:10px;
+   border-radius:20px;
+   width:70%;
+   left:50%;
+   transform: translatex(-50%);
+   }
+   
+#ghost p {
+   color: #d3b263 ; 
+   text-align: Center; 
+ font-size: calc(16px + 6 * ((100vw - 320px) / 680))
+   margin:0;
+}  
+   
+.cbutton:hover {
+ text-align: Center;
+ transition:0.4s;
+} 
+    
+#ghost .timespassing{			
+ text-align: center;
+ color: #d3b263;
+ padding: 10px;
+ text-align: center;
+ border-radius: 40px;
+ border: none;
+ overflow: hidden;
+ position: relative;
+ text-align: center;
+ padding: 10px;
+ margin-left: auto;
+ margin-right: auto;
+ overflow: hidden;
+}
+
+#ghost .info {
+ font-size: 80px;
+ font-family: 'Arvo', serif;
+}
+    
+#ghost h2{
+ color: #d3b263;
+ text-align: center;
+ margin-left: auto;
+ margin-left: auto;
+ font-size: 70px;
+ padding:0 0 0 0;
+ margin-bottom: 0;
+ position: relative;
+    }
+   
+   
+   
+#ghost td{
+  width:unset;
+}
+
+#ghost table{
+   animation:none;
+   position:relative;
+   }
+   
+.ahhmobile{
+   display:none;
+   }
+@media only screen and (max-width: 600px){
+#ghost .timespassing{
+   border-radius:unset;
+   }
+.ahh{
+ display:none;
+   }
+.ahhmobile{
+   display:inline-grid;
+   width:100%;
+   height:100%;
+   position: absolute;
+   top: 50%;
+   transform: translate(0, -50%);
+   background: #C1E1C1;
+   overflow:scroll;
+   }
+header{
+   margin-bottom:none;
+   }
+   
+img{
+ max-width: 100%; 
+ max-height: 100%;
+   }    
+
+element.style {
+    background: gray;
+}
+.duc {
+    border: 1px solid gray;
+    background-color: #b1907f;
+    text-align: center;
+    font-family: 'Arvo', serif;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.4s;
+    width: 96%;
+    float: center;
+    height: -webkit-fill-available;
+    margin: auto;
+    box-shadow: 3px 3px #fff9b5;
+    text-align: center;
+    overflow: scroll;
+}
+.cbutton{
+   border:unset;
+   }
+   
+.hiddendivs{
+   width:100%;
+   border-radius:unset;
+   }
+
+table{
+ width:100%;               
+ padding:1px;
+      }
+#osnd{
+    font-size:calc(20px + 6 * ((100vw - 320px) / 680));}
+
+#days, #hours, #minutes, #seconds{
+   font-size:calc(16px + 6 * ((100vw - 320px) / 680));  
+    }
+}
+
+</style>
+   
+   
+   
+         
+
+
+
+   
+   
+   <section class="ahh">
+   
+<table>
+  <tr>
+    <td></td>
+    <td><div id="timer"  onclick="openclock()" class="duc" style="background:gray" onmouseover="this.style.background='#b1907f';" onmouseout="this.style.background='gray';"><p>timer</p></div></td>
+  </tr>
+  <tr>
+    <td><header> <p> happy 18th birthday noc :] <p></header></td>
+    <td><div id="message" class="duc" style="background:gray" onmouseover="this.style.background='#b1907f';" onmouseout="this.style.background='gray';" onclick="openmsg()"><p>message</p></div></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><div id="gift" class="duc" style="background:gray" onmouseover="this.style.background='#b1907f';" onmouseout="this.style.background='gray';" onclick="openjift()"><p>gift</p></div></td>
+  </tr>
+</table>
+      
+   </section>
+
+   <section class="ahhmobile">
+    <header> <p> happy 18th birthday noc :] <p></header>
+   
+    <div id="timer"  onclick="openclock()" class="duc" style="background:gray" onmouseover="this.style.background='#b1907f';" onmouseout="this.style.background='gray';"><p>timer</p></div>
+
+   <div id="message" class="duc" style="background:gray" onmouseover="this.style.background='#b1907f';" onmouseout="this.style.background='gray';" onclick="openmsg()"><p>message</p></div>
+   
+   <div id="gift" class="duc" style="background:gray" onmouseover="this.style.background='#b1907f';" onmouseout="this.style.background='gray';" onclick="openjift()"><p>gift</p></div> 
+   </section>
+
+
+   
+    
+   
+
+   <section id="ghost">
+      <div id="time" class="hiddendivs">
+         <div id="timec" class="cbutton" onclick="closeclock()" style="background:transparent;" onmouseover="this.style.background='#d3b263';" onmouseout="this.style.background='transparent'"> <p> close X</p> </div>
+         <table id="Yours" class="timespassing">
+
+         <tr class="info">
+         <td colspan="4" style="font-family: 'Arvo', serif;"><u id=osnd>Birthday count down</u></td>
+         </tr>
+
+         <tr class="info" style="color: #d3b263;">
+         <td id="days">120</td>
+         <td id="hours">4</td>
+         <td id="minutes">12</td>
+         <td id="seconds">22</td>
+         </tr>
+
+         <tr style="color: #d3b263;">
+         <td>Days</td>
+         <td>Hours</td>
+         <td>Minutes</td>
+         <td>Seconds</td>
+
+         <h2 id="HPPYBRTHDaY" style="display:none;">HAPPY BIRTHDAY</h2>
+
+         </tr>
+         </table>
+      </div>
+      
+      
+      
+      <div id="msg" class="hiddendivs">
+         <div id="msgc" class="cbutton" onclick="closemsg()" style="background:transparent;" onmouseover="this.style.background='#d3b263';" onmouseout="this.style.background='transparent';"> <p> close X</p> </div> <br> <br> <br> <br> <br> <div><p id="messagewords"></p></div>
+   
+
+      </div>
+   
+      
+      
+      <div id="jift" class="hiddendivs">
+         <div id="jiftc" class="cbutton" onclick="closejift()" style="background:transparent;" onmouseover="this.style.background='#d3b263';" onmouseout="this.style.background='transparent';"> <p> close X</p> </div> <br> <br> <br> <br> <br> <p> hope you like :) </p> <p> <img src="https://cdn.discordapp.com/attachments/789172810186227747/864965557841297408/IMG_20210714_212303.jpg" alt="DM ME IF IMAGE DOESN'T SHOW" id=""> </p>
+      
+      </div>
+      
+   </section>
+   
+   
+   
+   
+   
+   
+   
+   
+<script>
+        function openclock() {
+           document.getElementById("time").style.display = "block";
+        }
+        function closeclock() {
+           document.getElementById("time").style.display = "none";
+        }
+</script>
+   
+   
+<script>
+        function openmsg() {
+           document.getElementById("msg").style.display = "block";
+        }
+        function closemsg() {
+           document.getElementById("msg").style.display = "none";
+        }
+</script>
+   
+   
+<script>
+        function openjift() {
+           document.getElementById("jift").style.display = "block";
+        }
+        function closejift() {
+           document.getElementById("jift").style.display = "none";
+        }
+</script>
+   
+   
+   
+<script>
+
+			function countdown(){
+				var now = new Date();
+				var eventDate = new Date(2022, 6, 15);
+
+				var currentTiime = now.getTime();
+				var eventTime = eventDate.getTime();
+
+				var remTime = eventTime - currentTiime;
+				
+				if(remTime <= 0) {
+					document.getElementById('Yours').style.display = 'none';
+					document.getElementById('HPPYBRTHDaY').style.display = '';
+					return;
+				}
+    
+                var s = Math.floor(remTime / 1000);
+				var m = Math.floor(s / 60);
+				var h = Math.floor(m / 60);
+				var d = Math.floor(h / 24);
+
+				h %= 24;
+				m %= 60;
+				s %= 60;
+
+				h = (h < 10) ? "0" + h : h;
+				m = (m < 10) ? "0" + m : m;
+				s = (s < 10) ? "0" + s : s;
+
+				document.getElementById("days").textContent = d;
+				document.getElementById("hours").textContent = h;
+				document.getElementById("minutes").textContent = m;
+				document.getElementById("seconds").textContent = s;
+
+				setTimeout(countdown, 1000);
+			}
+
+			countdown();
+    
+		</script>
+   
+   <script>
+      var myText ="To Noc, Happy birthday! 🎉 🎉 🎉 - - Firstly thank you for being you, I'll be praying that you get the phone of your dreamss and no need to tell me to pray for myself cuz I will >.> But you'll be included in my prayers uwu - If this website does work please view on both laptop and mobile! (Not using desktop mode on mobile) I tried my best to make it seggsy on both AND EVEN THO IT ONLY TURNED OUT okayish due to my lack of brain I'M STILL PROUD. (But like send me screenshots please of your POV anyways cuz I hope it turned out right as I wasn't able to test on many devices and had to rely on inspects- hehe) - In fact, I was going to write and play the piano for you but I got annoyed at messing up too much LMAOOO, but hey potential spoilers for future birthdays owo. - Instead I used my only 'skills' instead, I hope this is special enough for your big day :) If you have anything you wish to request of me I'll try my best! As long as it's within reason - IDK WHAT TO TYPE SO IMMA END IT HERE LMAOOO - Enjoy Genshin, all the moments you receive and everything else which I forgot to name e.e - I hope you enjoy your birthday and have loooots fun :3 - - Yours sincerely miri/ikhlas~ - P.S You aren't a minor no more so whatever illegal crimes you commit be SAFE, prison isn't as nice as juvie e.e";
+      var myArray = myText.split("");
+      var loopTimer;
+      function frameLooper() {
+      if(myArray.length > 0) {
+      document.getElementById("messagewords").innerHTML += myArray.shift();
+      } else {
+      clearTimeout(loopTimer);
+      return false;
+      }
+      loopTimer = setTimeout('frameLooper()',70);
+      }
+      frameLooper();
+    </script>
 
 </body>
+    
 </html>
